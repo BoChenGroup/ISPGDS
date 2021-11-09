@@ -1,0 +1,24 @@
+xx = sum(Y_TV,1);
+x = [1:1:365];
+figure(5);plot(x,Y_TV(:,1),'b','LineWidth',2);hold on;
+plot(x,Y_TV(:,2),'g','LineWidth',2);hold on;
+plot(x,Y_TV(:,6),'r','LineWidth',2);hold on;
+plot(x,Y_TV(:,13),'k','LineWidth',2);hold on;
+plot(x,Y_TV(5,:),'y','LineWidth',2);hold on;
+plot(x,Y_TV(6,:),'g','LineWidth',2);hold on;
+plot(x,Y_TV(7,:),'m','LineWidth',2);hold on;
+plot(x,Y_TV(8,:),'c','LineWidth',2);hold on;
+plot(x,Y_TV(9,:),'Color',[0 0.6 0.92],'LineWidth',2);hold on;
+plot(x,Y_TV(10,:),'Color',[0 0.4 0.8],'LineWidth',2);hold on;
+plot(x,Y_TV(11,:),'Color',[0.2 0.2 0.2],'LineWidth',2);hold on;
+plot(x,Y_TV(12,:),'Color',[0.5 0 0.9],'LineWidth',2);hold on;
+plot(x,Y_TV(13,:),'Color',[0.1 0.6 0.1],'LineWidth',2);hold on;
+plot(x,Y_TV(14,:),'Color',[0.9 0 0.6],'LineWidth',2);hold on;
+plot(x,Y_TV(15,:),'Color',[0.3 0.3 0.9],'LineWidth',2);hold on;
+plot(x,Y_TV(16,:),'Color',[0.4 0.9 0.1],'LineWidth',2);hold on;
+
+% plot(x,Y_TV(:,4),'m','LineWidth',2);hold on;
+% plot(x,Y_TV(:,8),'c','LineWidth',2);hold on;
+legend('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16');
+set(gca,'FontSize',20);
+X_train = double(Y_TV');
